@@ -1,0 +1,10 @@
+[21-Feb-2019 03:10:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function set_magic_quotes_runtime() in /home/dvfejx5x8nxk/public_html/administrator/includes/framework.php:21
+Stack trace:
+#0 /home/dvfejx5x8nxk/public_html/administrator/index.php(25): require_once()
+#1 {main}
+  thrown in /home/dvfejx5x8nxk/public_html/administrator/includes/framework.php on line 21
+[21-Feb-2019 03:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function set_magic_quotes_runtime() in /home/dvfejx5x8nxk/public_html/administrator/includes/framework.php:21
+Stack trace:
+#0 /home/dvfejx5x8nxk/public_html/administrator/index.php(25): require_once()
+#1 {main}
+  thrown in /home/dvfejx5x8nxk/public_html/administrator/includes/framework.php on line 21

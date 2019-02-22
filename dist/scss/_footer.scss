@@ -1,0 +1,31 @@
+.c-footer {
+    &_all_top {
+        display: flex;
+        
+    }
+    &_top {
+        background-color: #272727;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 16px;
+        text-align: center;
+        line-height: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Open Sans',sans-serif;
+
+    }
+    &_bottom {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 14px;
+        background-color: #1f1f1f;
+        font-family: 'Open Sans',sans-serif;
+    }
+    &_text {
+        
+    }
+}

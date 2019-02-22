@@ -1,0 +1,42 @@
+
+
+.c-information {
+    
+
+    @include mq(600px) {
+      
+       
+ 
+   
+    }
+ 
+    
+&__block {
+    width: 34%;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 24px;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.45);
+    line-height: 2;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    @include mq(600px) {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        border-right: none;
+        padding: 24px;
+        font-size: 20px;
+    }
+    &:last-child {
+        border-right: none;
+    }
+    
+    
+}
+
+}

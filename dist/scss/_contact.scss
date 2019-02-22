@@ -1,0 +1,24 @@
+.c-contact {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 176px;
+    &_header {
+        text-align: center;
+        font-size: 55px;
+        border-bottom: solid 1px black;
+        padding-bottom: 20px;
+        margin-top: 100px;
+        font-family: 'Merriweather', serif;
+    }
+    &_info {
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+    }
+}
+
+.c_map {
+    margin: 0 auto;
+    
+}

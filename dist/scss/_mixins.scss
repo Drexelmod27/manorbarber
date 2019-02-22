@@ -1,0 +1,12 @@
+@mixin mq($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+
+@mixin mq_min($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
