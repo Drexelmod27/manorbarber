@@ -29,7 +29,8 @@ p {
 
 .o-icon {
   display: block;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 7px; }
   .o-icon svg {
     width: 20px;
     fill: #ffffff;
@@ -415,7 +416,7 @@ p {
   justify-content: center; }
   .c-hero__logo {
     color: #ffffff;
-    font-size: 45px;
+    font-size: 21px;
     font-family: "Roboto Condensed", Sans-Serif;
     text-align: center;
     margin-bottom: 100px; }
@@ -444,13 +445,14 @@ p {
       background-color: rgba(0, 0, 0, 0.8);
       text-align: center;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      font-size: 20px;
-      padding: 20px; }
+      font-size: 14px;
+      padding: 14px; }
       @media screen and (min-width: 1000px) {
         .c-hero__information__block {
           padding: 40px;
           line-height: 1.5;
-          width: 25%; } }
+          width: 25%;
+          font-size: 20px; } }
 
 .links {
   text-decoration: none;

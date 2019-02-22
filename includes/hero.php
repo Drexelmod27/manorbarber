@@ -8,7 +8,7 @@
     <div class="c-hero__information">
         <div class="c-hero__information__block"> 
             <p class="o-icon"><?php include "includes/svgs/map.svg" ?></p>
-            <p class="c-hero__information__body">1208 Millersville Pike, Lancaster, PA 17603</p>
+            <a  href="https://goo.gl/maps/7qh6XseeCBo" class="c-hero__information__body links">1208 Millersville Pike, Lancaster, PA 17603</a>
         </div>
         <div class="c-hero__information__block">
             <p class="o-icon"><?php include "includes/svgs/phone.svg" ?></p>
