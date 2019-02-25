@@ -21,19 +21,30 @@
     <!--Components -->
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
     <link href="dist/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 
 <body>
-    <!-- <header class="c-header"> -->
-        <!--<div class="c-header_logo">
-            <a>Manor Barber Shop</a>
-        </div> -->
-        <!-- <nav class="l-grid c-header__links">
-            <a class="c-header__link" href="#home">Home</a>
-            <a class="c-header__link" href="#ourteam">Our Team</a>
-            <a class="c-header__link" href="#services">Services</a>
-            <a class="c-header__link" href="#contact">Contacts Us</a>
-        </nav> -->
+     <header class="l-grid__header c-header"> 
+        <div class="c-header_logo">
+        </div> 
+         <nav class="topnav c-header__links">
+            <a class="active c-header__link" href="#home">Home</a>
+            <div id="myLinks">
+               <a class="c-header__link" href="#ourteam">Our Team</a>
+               <a class="c-header__link" href="#services">Services</a>
+               <a class="c-header__link" href="#contact">Location</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa o-icon__close "><?php include "includes/svgs/menu.svg" ?></i>
+            <i id="myLinks" class="fa o-icon__close "><?php include "includes/svgs/close.svg" ?></i>
+            
+            </a>            
+        </nav>
+       
+        
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+         
     
-    <!-- </header>    -->
+     </header>    

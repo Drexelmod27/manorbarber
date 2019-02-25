@@ -2,6 +2,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Cabin", Sans-Serif;
   font-size: 16px;
@@ -22,6 +25,11 @@ p {
   padding-left: 3%;
   padding-right: 3%; }
 
+.l-grid__header {
+  margin: 0 auto;
+  padding-left: 15%;
+  padding-right: 15%; }
+
 .l-grid--contain {
   max-width: 1104px;
   margin: 0 auto;
@@ -32,80 +40,125 @@ p {
   text-align: center;
   margin-bottom: 7px; }
   .o-icon svg {
-    width: 20px;
+    width: 25px;
     fill: #ffffff;
     height: 100%; }
+    .o-icon svg:hover {
+      fill: #a01f3b;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+
+.o-icon__close {
+  display: block; }
+  .o-icon__close svg {
+    width: 25px;
+    fill: white;
+    height: 100%; }
+    .o-icon__close svg:hover {
+      fill: #a01f3b;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    @media screen and (min-width: 1000px) {
+      .o-icon__close svg {
+        width: 34px; } }
+
+.hero-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 100px; }
+  .hero-icons svg {
+    width: 50px;
+    fill: #ffffff;
+    height: 100%;
+    margin-right: 40px;
+    margin-left: 40px; }
+    .hero-icons svg:hover {
+      fill: #a01f3b;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    @media screen and (min-width: 1000px) {
+      .hero-icons svg {
+        width: 80px;
+        margin-right: 50px;
+        margin-left: 50px; } }
 
 .c-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   font-size: 20px;
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); }
-  @media screen and (min-width: 600px) {
-    .c-header__links {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      font-size: 19px;
-      width: 100%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .c-header__link {
     color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
     padding: 10px 25px;
-    font-family: 'Cabin', sans-serif; }
-  .c-header a:hover {
-    background: #333; }
+    font-family: "Roboto Condensed", Sans-Serif;
+    font-weight: bold; }
 
-.c-footer_all_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
 
-.c-footer_top {
-  background-color: #272727;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 50%;
-  font-size: 16px;
-  text-align: center;
-  line-height: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: 'Open Sans',sans-serif; }
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none; }
 
-.c-footer_bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 14px;
-  background-color: #1f1f1f;
-  font-family: 'Open Sans',sans-serif; }
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block; }
+  @media screen and (min-width: 1000px) {
+    .topnav a {
+      font-size: 30px;
+      padding: 14px 16px; } }
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: #a01f3b;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+/* Style the active link (or home/logo) */
+.fa {
+  color: white;
+  font-size: 20px; }
+
+.c-footer {
+  text-align: center; }
+  .c-footer_text {
+    color: #fff;
+    background-color: #1f1f1f;
+    font-family: "Cabin", Sans-Serif;
+    font-size: 15px;
+    padding: 10px; }
 
 .menu icon {
   overflow: hidden;
@@ -136,189 +189,115 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
   width: 100%;
   padding-bottom: 30px;
-  border-bottom: solid 1px black;
+  border-top: solid 1px black;
   margin-bottom: 38px; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .c-ourteam {
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; } }
-  .c-ourteam_text_1 {
-    width: 50%;
-    margin-right: 120px;
-    padding-bottom: 20px;
-    font-family: 'Cabin', sans-serif; }
-    @media screen and (min-width: 600px) {
-      .c-ourteam_text_1 {
-        width: 100%; } }
-  .c-ourteam_text_2 {
-    width: 50%;
-    margin-left: -145px;
-    font-family: 'Cabin', sans-serif; }
-    @media screen and (min-width: 600px) {
-      .c-ourteam_text_2 {
-        margin-left: 123px; } }
-  .c-ourteam_picture {
-    width: 60%; }
-    @media screen and (min-width: 600px) {
-      .c-ourteam_picture {
-        margin-left: 62px; } }
-  .c-ourteam_name {
-    text-align: center; }
-  .c-ourteam_info {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      padding-top: 65px;
+      padding-bottom: 100px; } }
+  .c-ourteam_text {
     text-align: center;
     font-size: 15px;
-    line-height: 35px; }
-  .c-ourteam_header {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 55px;
-    border-bottom: solid 1px black;
-    padding-bottom: 20px;
-    margin-top: 100px;
-    font-family: 'Merriweather', serif; }
-    @media screen and (min-width: 600px) {
-      .c-ourteam_header {
-        margin-top: -283px; } }
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-top: 22px; }
+    @media screen and (min-width: 1000px) {
+      .c-ourteam_text {
+        margin-right: 100px; } }
+  .c-ourteam_name {
+    color: #a01f3b;
+    font-size: 35px;
+    margin-bottom: 20px; }
 
-@media screen and (min-width: 600px) {
-  .c_map {
-    display: none; } }
-
-.c_map_small {
-  margin-left: 63px; }
-  @media screen and (min-width: 600px) {
-    .c_map_small {
-      display: none; } }
-
-.c-header_other {
+.c-services {
+  background: url("../images/barber_lobby.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-size: 20px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); }
-  .c-header_other_logo {
-    color: #ffffff; }
-  .c-header_other__link {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .c-services__header {
     color: #ffffff;
-    text-decoration: none;
-    text-transform: capitalize;
-    margin-right: 10px;
-    padding: 10px 25px; }
-  .c-header_other a:hover {
-    background: #333; }
-
-.c-heading {
-  text-align: center;
-  font-size: 55px;
-  color: #f5f5f5;
-  padding-bottom: 20px;
-  margin-top: 100px;
-  margin-bottom: -30px;
-  margin-bottom: 70px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-  margin-top: 100px;
-  position: absolute;
-  top: 200%;
-  left: 44%; }
-  @media screen and (min-width: 600px) {
-    .c-heading {
-      top: 241%;
-      left: 32%; } }
-
-.ourteam-container {
-  margin-bottom: 206px; }
-
-.c-services {
-  margin-bottom: 70px;
-  margin-top: 50px;
-  margin-bottom: 70px;
-  margin-top: 100px;
-  position: absolute;
-  top: 209%;
-  left: 35%;
-  font-family: 'Merriweather', serif;
-  width: 600px; }
-  @media screen and (min-width: 600px) {
-    .c-services {
-      width: 545px;
-      top: 248%;
-      left: 2%;
-      margin-top: 86px; } }
-  .c-services_picture {
-    background: url("../images/barber_lobby.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%; }
-  .c-services h1 {
+    font-size: 33px;
+    font-family: "Roboto Condensed", Sans-Serif;
+    margin-bottom: 80px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .c-services__header:hover {
+      color: #a01f3b;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+  .c-services__box {
     text-align: center;
-    font-size: 55px;
-    color: #f5f5f5;
-    padding-bottom: 20px;
-    margin-top: 100px;
-    margin-bottom: -30px; }
-  .c-services h3 {
-    font-weight: 300;
-    font-size: 24px;
-    font-family: 'Cabin', sans-serif; }
-  .c-services p {
-    color: #f5f5f5;
-    font-family: 'Cabin', sans-serif; }
-  .c-services_tabcontent {
-    color: #f5f5f5;
-    font-size: 27px; }
-  .c-services_row {
-    text-align: center;
-    border-bottom: solid 1px #f5f5f5;
-    padding-bottom: 15px;
-    margin-bottom: 15px; }
-  .c-services_message {
-    text-align: center;
-    border: solid 3px rgba(0, 0, 0, 0.8);
-    padding: 17px 20px;
-    margin-bottom: 50px;
-    margin-top: 40px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-family: 'Cabin', sans-serif; }
-    .c-services_message p {
-      color: #ffffff; }
+    height: 700px; }
+    @media screen and (min-width: 1000px) {
+      .c-services__box {
+        margin-right: 25%;
+        margin-left: 25%;
+        width: auto;
+        position: static; } }
+  .c-services__row {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: "Cabin", Sans-Serif;
+    font-size: 20px;
+    padding: 35px; }
+    .c-services__row:last-child {
+      border-bottom: none; }
+    .c-services__row:hover {
+      color: #a01f3b;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    @media screen and (min-width: 1000px) {
+      .c-services__row {
+        padding: 35px;
+        font-size: 26px; } }
 
 /* Style the tab */
-.tab {
+.c-services__tabs {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  font-size: 25px;
-  padding: 10px;
-  background-color: #181818;
-  font-family: 'Cabin', sans-serif;
-  margin-top: 30px; }
-
-.tablinks {
-  color: #ffffff; }
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto Condensed", Sans-Serif;
+  font-size: 20px;
+  padding: 15px; }
+  @media screen and (min-width: 1000px) {
+    .c-services__tabs {
+      font-size: 30px; } }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.c-services__tabs button {
   background-color: inherit;
   float: left;
   border: none;
@@ -327,24 +306,27 @@ p {
   padding: 14px 16px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0); }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd; }
+.c-services__tabs button:hover {
+  color: #a01f3b;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.c-services__tabs button.active {
   background-color: #ccc; }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 40px 140px;
+  padding: 6px 12px;
   border: 1px solid #ccc;
-  border-top: none;
-  color: #f5f5f5;
-  font-size: 27px; }
+  border-top: none; }
 
 .c-contact {
   display: -webkit-box;
@@ -365,14 +347,30 @@ p {
     font-size: 55px;
     border-bottom: solid 1px black;
     padding-bottom: 20px;
-    margin-top: 100px;
-    font-family: 'Merriweather', serif; }
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #a01f3b;
+    padding-top: 65px; }
   .c-contact_info {
     text-align: center;
-    font-family: 'Cabin', sans-serif; }
+    font-family: "Cabin", Sans-Serif;
+    line-height: 2;
+    font-size: 20px; }
 
-.c_map {
+.c-map {
+  display: none; }
+  @media screen and (min-width: 1000px) {
+    .c-map {
+      display: block;
+      margin: 0 auto;
+      padding-top: 40px; } }
+
+.c-map__small {
+  padding-top: 40px;
   margin: 0 auto; }
+  @media screen and (min-width: 1000px) {
+    .c-map__small {
+      display: none; } }
 
 .c-information__block {
   width: 34%;
@@ -416,13 +414,19 @@ p {
   justify-content: center; }
   .c-hero__logo {
     color: #ffffff;
-    font-size: 21px;
+    font-size: 30px;
     font-family: "Roboto Condensed", Sans-Serif;
     text-align: center;
-    margin-bottom: 100px; }
+    margin-bottom: 45px;
+    margin-top: 90px; }
     @media screen and (min-width: 1000px) {
       .c-hero__logo {
         font-size: 70px; } }
+    .c-hero__logo:hover {
+      color: #a01f3b;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
   .c-hero__information {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -456,4 +460,17 @@ p {
 
 .links {
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+  line-height: 2; }
+  .links:hover {
+    color: #a01f3b;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
+
+.page_header {
+  text-align: center;
+  font-size: 55px;
+  padding-top: 120px;
+  margin-bottom: 36px;
+  color: #a01f3b; }

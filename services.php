@@ -1,82 +1,85 @@
-<div id="services" class="c-services_picture">
-</div>
-<div class="l-grid--contain">
-<h1 class="c-heading">Services</h1>
-    <div class="c-services">
-        
-        <!--tabbed links-->
-        <div class="tab">
-            <button class="tablinks active" onclick="openCity(event, 'men')">Men</button>
+<section id="services" class="l-grid c-services">
+    <div class="c-services__header">
+        <h1>Services</h1>
+    </div>
+    <div class="c-services__box">
+        <div class="c-services__tabs">
+            <button class="tablinks" onclick="openCity(event, 'men')">Men</button>
             <button class="tablinks" onclick="openCity(event, 'women')">Women</button>
             <button class="tablinks" onclick="openCity(event, 'specialty')">Specialty</button>
         </div>
         <!--men-->
-        <div id="men" class="tabcontent" style="display:block;">
-            <div class=c-services_row>
-                <h3>Regular Haircut - 17 </h3>
+        <div id="men" class="tabcontent" style="display:block;"> 
+            <div class=c-services__row>
+                <h4>Regular Haircut - 17 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Flat Tops - 18 </h3>
+            <div class=c-services__row>
+                <h4>Flat Tops - 18 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Bald Fade - 18 </h3>
+            <div class=c-services__row>
+                <h4>Bald Fade - 18 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Shape Ups - 10 </h3>
+            <div class=c-services__row>
+                <h4>Shape Ups - 10 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Junior Haircut - 15 </h3>
+            <div class=c-services__row>
+                <h4>Junior Haircut - 15 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Senior Haircut - 15 </h3>
+            <div class=c-services__row>
+                <h4>Senior Haircut - 15 </h4>
             </div>
-
-        </div>
+        </div> 
         <!----women-->
         <div id="women" class="tabcontent">
-            <div class=c-services_row>
-                <h3>Regular Haircut - 20 - 26 </h3>
+            <div class=c-services__row>
+                <h4>Regular Haircut - 20 - 26 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Blunt Cut - 15 </h3>
+            <div class=c-services__row>
+                <h4>Blunt Cut - 15 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Girls Haircut - 17 - 21 </h3>
+            <div class=c-services__row>
+                <h4>Girls Haircut - 17 - 21 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Bang Trim - 8 </h3>
+            <div class=c-services__row>
+                <h4>Bang Trim - 8 </h4>
             </div>
-        </div>
-
+        </div> 
         <!----specialty-->
         <div id="specialty" class="tabcontent">
-            <div class=c-services_row>
-                <h3>Shampoo - 10 </h3>
+            <div class=c-services__row>
+                <h4>Shampoo - 10 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Electric Face Shave - 8 </h3>
+            <div class=c-services__row>
+                <h4>Electric Face Shave - 8 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Hot Shave - 15 </h3>
+            <div class=c-services__row>
+                <h4>Hot Shave - 15 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Razor Head Shave - 15 </h3>
+            <div class=c-services__row>
+                <h4>Razor Head Shave - 15 </h4>
             </div>
 
-            <div class=c-services_row>
-                <h3>Beard Trim - 8 </h3>
+            <div class=c-services__row>
+                <h4>Beard Trim - 8 </h4>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+
+
+
+
+
+

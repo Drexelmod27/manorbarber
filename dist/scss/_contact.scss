@@ -9,16 +9,41 @@
         font-size: 55px;
         border-bottom: solid 1px black;
         padding-bottom: 20px;
-        margin-top: 100px;
-        font-family: 'Merriweather', serif;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: rgb(160, 31, 59);
+        padding-top: 65px;
     }
     &_info {
         text-align: center;
-        font-family: 'Cabin', sans-serif;
+        font-family: $font-secondary;
+        line-height: 2;
+        font-size: 20px;
     }
 }
 
-.c_map {
-    margin: 0 auto;
-    
+
+.c-map {
+    display: none;
+    @include mq(1000px) {
+        display: block;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
 }
+
+.c-map__small {
+    padding-top: 40px;
+    margin: 0 auto;
+    @include mq(1000px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+   
+   

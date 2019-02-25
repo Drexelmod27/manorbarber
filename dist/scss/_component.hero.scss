@@ -9,13 +9,19 @@
     justify-content: center;
     &__logo {
         color: $color-white;
-        font-size: 21px;
+        font-size: 30px;
         font-family: $font-primary;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 45px;
+        margin-top: 90px;
         @include mq(1000px) {
             font-size: 70px;
         }
+        &:hover {
+                color: rgb(160, 31, 59);
+                transition: 1s;
+            }
+        
     }
     &__information {
         display: flex;
@@ -47,4 +53,9 @@
 .links {
     text-decoration: none;
     color: $color-white;
+    line-height: 2;
+    &:hover {
+        color: rgb(160, 31, 59);
+        transition: 1s;
+    }
 }

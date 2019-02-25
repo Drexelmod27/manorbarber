@@ -1,125 +1,79 @@
-.c-heading {
-    text-align: center;
-    font-size: 55px;
-    color: #f5f5f5;
-    padding-bottom: 20px;
-    margin-top: 100px;
-    margin-bottom: -30px;
-    margin-bottom: 70px;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    margin-top: 100px;
-    position: absolute;
-    top: 200%;
-    left: 44%;
-    @include mq(600px) {
-        top: 241%;
-        left: 32%;
-    }
-    // @include mq_min(600px) {
-    //     top: 233%;
-    //     left: 40%;
-    //  }
-}
-
-
-.ourteam-container {
-    margin-bottom: 206px;
-}
-
-
 .c-services {
-    margin-bottom: 70px;
-    margin-top: 50px;
-    margin-bottom: 70px;
-    margin-top: 100px;
-    position: absolute;
-    top: 209%;
-    left: 35%;
-    font-family: 'Merriweather', serif;
-    width: 600px;
-    @include mq(600px) {
-        width: 545px;
-        top: 248%;
-        left: 2%;
-        margin-top: 86px;
-    }
-    // @include mq_min(600px) {
-    //     top: 239%;
-    //     left: 16%;
-    //  }
-    &_picture {
-        background: url('../images/barber_lobby.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 100%;
-        }
-    h1 {
-        text-align: center;
-        font-size: 55px;
-        color: #f5f5f5;
-        padding-bottom: 20px;
-        margin-top: 100px;
-        margin-bottom: -30px;
-    }
-    h3 {
-        font-weight: 300;
-        font-size: 24px;
-        font-family: 'Cabin', sans-serif;
-    }
-    p {
-        color: #f5f5f5;
-        font-family: 'Cabin', sans-serif;
-    }
-    &_tabcontent {
-        color: #f5f5f5;
-        font-size: 27px;
-        
-        
-    }
-    &_row {
-        text-align: center;
-        border-bottom: solid 1px #f5f5f5;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-    }
-    &_message {
-        text-align: center;
-        border: solid 3px rgba(0, 0, 0, 0.8);
-        padding: 17px 20px;
-        margin-bottom: 50px;
-        margin-top: 40px;
+    background: url('../images/barber_lobby.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__header {
         color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.8);
-        font-family: 'Cabin', sans-serif;
-        p {
-            color: #ffffff;
+        font-size: 33px;
+        font-family: "Roboto Condensed", Sans-Serif;
+        margin-bottom: 80px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        &:hover {
+          color: rgb(160, 31, 59);
+          transition: 1s;
+      }
+    }
+    &__box {
+        text-align: center;
+        height: 700px;
+        @include mq(1000px) {
+            margin-right: 25%;
+            margin-left: 25%;
+            width: auto;
+            position: static;
+        }
+    }
+    &__row {
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        font-family: $font-secondary;
+        font-size: 20px;
+        padding: 35px;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover {
+          color: rgb(160, 31, 59);
+          transition: 1s;
+        }
+        @include mq(1000px) {
+            padding: 35px;
+            font-size: 26px;
         }
     }
 }
+
+
+
+
+// Tab css
 
 /* Style the tab */
-.tab {
+.c-services__tabs {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    overflow: hidden;
     display: flex;
     justify-content: space-evenly;
-    font-size: 25px;
-    padding: 10px;
-    background-color: #181818;
-    font-family: 'Cabin', sans-serif;
-    margin-top: 30px;
-   
-}
-
-.tablinks {
-    color: #ffffff;
-}
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: $font-primary;
+    font-size: 20px;
+    padding: 15px;
+    @include mq(1000px) {
+        font-size: 30px;
+    }
+  }
+  
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .c-services__tabs button {
     background-color: inherit;
     float: left;
     border: none;
@@ -127,27 +81,56 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.0);
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
+  .c-services__tabs button:hover {
+    color: rgb(160, 31, 59);
+    transition: 1s;
   }
   
   /* Create an active/current tablink class */
-  .tab button.active {
+  .c-services__tabs button.active {
     background-color: #ccc;
   }
   
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 40px 140px;
+    padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    color: #f5f5f5;
-    font-size: 27px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
