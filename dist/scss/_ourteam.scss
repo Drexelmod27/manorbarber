@@ -10,7 +10,6 @@
     padding-top: 65px;
     @include mq(1000px) {
         flex-direction: row;
-        padding-bottom: 292px;
     }
     &_text {
         text-align: center;
@@ -48,7 +47,6 @@
     background: url('../images/barber_lobby.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .picture_small {

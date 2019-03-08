@@ -3,9 +3,12 @@
     text-align: center;
     margin-bottom: 7px;
     svg{
-        width: 25px;
+        width: 15px;
         fill: rgb(160, 31, 59);
         height: 100%;
+        @include mq(1000px) {
+            width: 25px;
+        }
     }
 }
 
@@ -44,7 +47,7 @@
         @include mq(1000px) {
             width: 80px;
             margin-right: 50px;
-        margin-left: 50px;
+            margin-left: 50px;
         }
         
         
