@@ -10,18 +10,28 @@
     &__logo {
         color: $color-white;
         font-size: 30px;
-        font-family: $font-primary;
+        font-family: 'Great Vibes', cursive;
         text-align: center;
         margin-bottom: 45px;
         margin-top: 90px;
+        font-family: $font-logo;
         @include mq(1000px) {
             font-size: 70px;
         }
-        &:hover {
-                color: rgb(160, 31, 59);
-                transition: 1s;
-            }
-        
+    }
+    &__heading {
+        font-family: 'Great Vibes', cursive;
+        color: rgb(160, 31, 59);
+        text-shadow: 0px 1px 0 #fff, 4px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000;
+    }
+    &__subheading {
+        font-family: 'Great Vibes', cursive;
+        color: rgb(160, 31, 59);
+        font-size: 25px;
+        text-shadow: 0px 1px 0 #fff, 2px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000;
+        @include mq(1000px) {
+            font-size: 50px;
+        }
     }
     &__information {
         display: flex;
@@ -38,6 +48,7 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 14px;
             padding: 14px;
+            border-radius: 10px;
             @include mq(1000px) {
                 padding: 40px;
                 line-height: 1.5;

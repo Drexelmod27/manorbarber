@@ -1,31 +1,66 @@
 .c-ourteam {
+
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
     padding-bottom: 30px;
-    border-top: solid 1px black;
+    border-top: solid 1px white;
     margin-bottom: 38px;
+    padding-top: 65px;
     @include mq(1000px) {
         flex-direction: row;
-        padding-top: 65px;
-        padding-bottom: 100px;
+        padding-bottom: 292px;
     }
     &_text {
         text-align: center;
         font-size: 15px;
         line-height: 35px;
-        margin-bottom: 20px;
-        margin-top: 22px;
+        margin-bottom: 40px;
+        color: white;
         @include mq(1000px) {
-            margin-right: 100px;
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+    }
+    &_info {
+        font-size: 16px;
+        &:first-child {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        @include mq(1000px) {
+            font-size: 20px; 
         }
     }
     &_name {
         color: rgb(160, 31, 59);
-        font-size: 35px;
-        margin-bottom: 20px;
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    &_picture {
+        margin-bottom: 30px;
+        border-radius: 5px;
     }
 }
 
+.ourteam_background {
+    background: url('../images/barber_lobby.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.picture_small {
+    @include mq(1000px) {
+        display: none;
+    }
+}
+
+.picture_large {
+    display: none;
+    @include mq(1000px) {
+        display: inline-block;
+    }
+}
  

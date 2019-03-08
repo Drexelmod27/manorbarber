@@ -4,12 +4,8 @@
     margin-bottom: 7px;
     svg{
         width: 25px;
-        fill: $color-white;
+        fill: rgb(160, 31, 59);
         height: 100%;
-        &:hover {
-            fill: rgb(160, 31, 59);
-            transition: 1s;
-        }
     }
 }
 
@@ -25,7 +21,7 @@
             transition: 0.5s;
         }
         @include mq(1000px) {
-            width: 34px;
+            display: none;
         }
         
     }

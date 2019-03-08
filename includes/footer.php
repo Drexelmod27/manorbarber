@@ -1,8 +1,16 @@
 <footer class="c-footer">
     <div class="c-footer_text">
-        <p>Copyright © 2018 Manor Barber. All rights reserved.</p>
+        <?php
+            echo '&copy; '. date('Y');
+        ?>
+        <?php
+            echo 'Manor Barber, LLC';
+        ?>
     </div>
+
+   
     
+    <?php include 'includes/carousel.php'; ?>
     <script src="dist/js/main.js"></script>
 </footer>
 </body>

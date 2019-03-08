@@ -1,5 +1,5 @@
 .c-services {
-    background: url('../images/barber_lobby.jpg');
+    // background: url('../images/barber_lobby.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -8,42 +8,34 @@
     flex-direction: column;
     justify-content: center;
     &__header {
-        color: #ffffff;
-        font-size: 33px;
-        font-family: "Roboto Condensed", Sans-Serif;
-        margin-bottom: 80px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        &:hover {
-          color: rgb(160, 31, 59);
-          transition: 1s;
-      }
+      text-align: center;
+      font-size: 55px;
+      border-bottom: solid 1px black;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+      color: rgb(160, 31, 59);
+      padding-top: 65px;
     }
     &__box {
         text-align: center;
         height: 700px;
         @include mq(1000px) {
-            margin-right: 25%;
-            margin-left: 25%;
+            margin-right: 10%;
+            margin-left: 10%;
             width: auto;
             position: static;
         }
     }
     &__row {
         font-size: 20px;
-        color: white;
         padding: 10px;
         border-bottom: 1px solid #ccc;
         font-family: $font-secondary;
         font-size: 20px;
         padding: 35px;
+        color: rgb(160, 31, 59);
         &:last-child {
             border-bottom: none;
-        }
-        &:hover {
-          color: rgb(160, 31, 59);
-          transition: 1s;
         }
         @include mq(1000px) {
             padding: 35px;
@@ -60,7 +52,7 @@
 /* Style the tab */
 .c-services__tabs {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.8);
@@ -87,23 +79,28 @@
   
   /* Change background color of buttons on hover */
   .c-services__tabs button:hover {
-    color: rgb(160, 31, 59);
+    background-color: rgb(160, 31, 59);
     transition: 1s;
   }
   
   /* Create an active/current tablink class */
   .c-services__tabs button.active {
-    background-color: #ccc;
+    background-color: rgb(160, 31, 59);
   }
   
   /* Style the tab content */
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-top: 15px;
   }
 
+  .price {
+    color: rgb(160, 31, 59);
+  }
 
 
 

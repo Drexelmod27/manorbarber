@@ -2,13 +2,9 @@
 
     <div class="c-hero__logo">
         <h1 class="c-hero__heading">Manor Barber Shop</h1>
+        <h1 class="c-hero__subheading">Est. 1962 </h1>
     </div>
-    <div class="hero-icons">
-    <p class=""><?php include "includes/svgs/scissors.svg" ?></p>
-    <p class=""><?php include "includes/svgs/chair.svg" ?></p>
-    <p class=""><?php include "includes/svgs/razor.svg" ?></p>
-    </div>
-
+   
     <div class="c-hero__information">
         <div class="c-hero__information__block"> 
             <p class="o-icon"><?php include "includes/svgs/map.svg" ?></p>

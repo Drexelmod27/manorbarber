@@ -4,40 +4,84 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 176px;
+    @include mq(1000px) {
+        flex-direction: row-reverse;
+    }
     &_header {
         text-align: center;
         font-size: 55px;
         border-bottom: solid 1px black;
         padding-bottom: 20px;
-        margin-top: 50px;
+        margin-top: 75px;
         margin-bottom: 50px;
         color: rgb(160, 31, 59);
         padding-top: 65px;
+
     }
     &_info {
         text-align: center;
         font-family: $font-secondary;
         line-height: 2;
         font-size: 20px;
+        margin-bottom: 30px;
+        @include mq(1000px) {
+            margin-bottom: 65px;
+            text-align: left;
+        }
+    }
+    &_info__header {
+        font-weight: bold;
+        color: rgb(160, 31, 59);
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 15px;
+        @include mq(1000px) {
+            font-size: 30px;
+            margin-top: 30px;
+            &:last-child {
+                margin-top: 70px;
+            }
+        }
+    }
+    &_box {
+        padding-top: 40px;
+        border-radius: 10px;
+        @include mq(1000px) {
+            margin-left: 55px;
+            width: 30%;
+
+        }
     }
 }
 
 
 .c-map {
-    display: none;
+    height: 400px;
     @include mq(1000px) {
         display: block;
         margin: 0 auto;
         padding-top: 40px;
+        width: 70%;
+        height: 600px;
+    
     }
 }
 
-.c-map__small {
-    padding-top: 40px;
-    margin: 0 auto;
-    @include mq(1000px) {
-        display: none;
-    }
+
+.call_button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background: #a01f3b;
+    border-radius: 8px;
+    color: white;
+    font-size: 25px;
+    padding: 20px 70px;
+    margin: 30px;
 }
 
 
