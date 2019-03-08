@@ -22,13 +22,13 @@
     &__heading {
         font-family: 'Great Vibes', cursive;
         color: rgb(160, 31, 59);
-        text-shadow: 0px 1px 0 #fff, 4px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000;
+        text-shadow: 0px 1px 0 #fff, 4px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #000;
     }
     &__subheading {
         font-family: 'Great Vibes', cursive;
         color: rgb(160, 31, 59);
         font-size: 25px;
-        text-shadow: 0px 1px 0 #fff, 2px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000;
+        text-shadow: 0px 1px 0 #fff, 4px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #000;
         @include mq(1000px) {
             font-size: 50px;
         }

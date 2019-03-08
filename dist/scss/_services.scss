@@ -1,12 +1,7 @@
 .c-services {
     // background: url('../images/barber_lobby.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include mq(1000px) {
+  }
     &__header {
       text-align: center;
       font-size: 55px;
@@ -14,16 +9,18 @@
       padding-bottom: 20px;
       margin-bottom: 50px;
       color: rgb(160, 31, 59);
-      padding-top: 65px;
+      padding-top: 100px;
+      @include mq(1000px) {
+        padding-top: 130px;
+    }
     }
     &__box {
         text-align: center;
-        height: 700px;
+        padding-bottom: 30px;
         @include mq(1000px) {
             margin-right: 10%;
             margin-left: 10%;
             width: auto;
-            position: static;
         }
     }
     &__row {

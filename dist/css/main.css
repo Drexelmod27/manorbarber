@@ -109,7 +109,7 @@ p {
 .nav-logo {
   font-family: 'Great Vibes', cursive;
   font-size: 25px;
-  text-shadow: 0px 1px 0 #fff, 0px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000;
+  text-shadow: 0px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #000;
   color: #a01f3b; }
   @media screen and (min-width: 1000px) {
     .nav-logo {
@@ -274,52 +274,41 @@ p {
     .picture_large {
       display: inline-block; } }
 
-.c-services {
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .c-services__header {
-    text-align: center;
-    font-size: 55px;
-    border-bottom: solid 1px black;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
-    color: #a01f3b;
-    padding-top: 65px; }
-  .c-services__box {
-    text-align: center;
-    height: 700px; }
-    @media screen and (min-width: 1000px) {
-      .c-services__box {
-        margin-right: 10%;
-        margin-left: 10%;
-        width: auto;
-        position: static; } }
-  .c-services__row {
-    font-size: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    font-family: "Cabin", Sans-Serif;
-    font-size: 20px;
-    padding: 35px;
-    color: #a01f3b; }
-    .c-services__row:last-child {
-      border-bottom: none; }
-    @media screen and (min-width: 1000px) {
-      .c-services__row {
-        padding: 35px;
-        font-size: 26px; } }
+.c-services__header {
+  text-align: center;
+  font-size: 55px;
+  border-bottom: solid 1px black;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  color: #a01f3b;
+  padding-top: 100px; }
+  @media screen and (min-width: 1000px) {
+    .c-services__header {
+      padding-top: 130px; } }
+
+.c-services__box {
+  text-align: center;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 1000px) {
+    .c-services__box {
+      margin-right: 10%;
+      margin-left: 10%;
+      width: auto; } }
+
+.c-services__row {
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-family: "Cabin", Sans-Serif;
+  font-size: 20px;
+  padding: 35px;
+  color: #a01f3b; }
+  .c-services__row:last-child {
+    border-bottom: none; }
+  @media screen and (min-width: 1000px) {
+    .c-services__row {
+      padding: 35px;
+      font-size: 26px; } }
 
 /* Style the tab */
 .c-services__tabs {
@@ -517,12 +506,12 @@ p {
   .c-hero__heading {
     font-family: 'Great Vibes', cursive;
     color: #a01f3b;
-    text-shadow: 0px 1px 0 #fff, 4px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000; }
+    text-shadow: 0px 1px 0 #fff, 4px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #000; }
   .c-hero__subheading {
     font-family: 'Great Vibes', cursive;
     color: #a01f3b;
     font-size: 25px;
-    text-shadow: 0px 1px 0 #fff, 2px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #000; }
+    text-shadow: 0px 1px 0 #fff, 4px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #000; }
     @media screen and (min-width: 1000px) {
       .c-hero__subheading {
         font-size: 50px; } }
