@@ -20,7 +20,7 @@
 .nav-logo {
   font-family: 'Great Vibes', cursive;
   font-size: 25px;
-  text-shadow: 0px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #000;
+  text-shadow: 0px -1px 0 #fff, 1px 0px 0 #fff, 1px 1px 0 #fff, 1px 0px 0 #fff, 1px 5px 0 #000;
   color: rgb(160, 31, 59);
   @include mq(1000px) {
     font-size: 35px;

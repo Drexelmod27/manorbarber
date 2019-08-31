@@ -75,6 +75,9 @@
             <div class=c-services__row>
                 <h4>Beard Trim - <span class="price">$8</span></h4>
             </div>
+            <div class=c-services__row>
+                <h4>Beard Trim w/Haircut - <span class="price">$4</span></h4>
+            </div>
         </div>
     </div>
 </section>

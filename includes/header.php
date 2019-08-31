@@ -15,6 +15,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="barber shop, barber, haircut, shave, color, kids hair, womens hair, mens hair">
     <meta name="description" contents="#">
+    <meta property=”og:title” content=”Manor Barber Shop” />
+    <meta property=”og:description” content=”Need a quality haircut? come to one of the oldest barbershops in Lancaster. Walk-Ins are accepted.” />
+    <meta property=”og:url” content=”https://www.manorbarbersinc.com/" />
+    <meta property=”og:image” content=”dist/images/metas_image.JPG">
+    <meta name=”twitter:card” content=”summary_large_image”>
+    <meta name=”twitter:title” content=”Manor Barber Shop” />
+    <meta name=”twitter:description” content=”Need a quality haircut? come to one of the oldest barbershops in Lancaster. Walk-Ins are accepted.” />
+    <meta name=”twitter:url” content=”https://www.manorbarbersinc.com/" />
+    <meta name=”twitter:image” content=”dist/images/metas_image.JPG">
+    <meta name="msvalidate.01" content="EDC9867247B89B458B61ED7F6E495AFE" />
+
     <title>Manor Barber Shop</title>
     <!-- Vendors -->
     <link rel="shortcut icon" type="image/png" href="dist/images/logo.png">
